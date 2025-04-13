@@ -7,11 +7,13 @@
 
 <div class="portfolio-app bg-gradient-to-b from-gray-900 to-black text-white min-h-screen">
   <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row w-full">
-    <aside class="sticky top-0 h-screen flex flex-col justify-between w-full lg:w-[40%] px-6 pt-24 pb-24">
-      <!-- Top Section: Profile and Navbar -->
+    <aside class="w-full lg:w-[40%] px-6 pt-12 pb-12 flex flex-col justify-between
+              lg:sticky lg:top-0 lg:h-screen lg:pt-24 lg:pb-24">
+
+      <!-- Top Section: Profile, Description, and Navbar -->
       <div>
-        <!-- Flex Container: Image + Info -->
-        <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-start gap-4">
+        <!-- Profile Section -->
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-4">
           <img
             src="/profile.jpeg"
             alt="Shakeel Ahmad"
@@ -28,14 +30,14 @@
           I build full-stack JavaScript solutions that power responsive, cross-platform experiences.
         </p>
 
-        <!-- Navbar (only on large screens) -->
-        <div class="hidden lg:block w-full mt-6">
+        <!-- Navbar: visible in both views -->
+        <div class="hidden lg:block mt-6">
           <Navbar />
         </div>
       </div>
 
-      <!-- Bottom Contact Icons Row -->
-      <div class="flex justify-center lg:justify-start gap-4 mt-6 text-teal-300 pt-6">
+      <!-- Always-at-Bottom Contact Icons -->
+      <div class="flex justify-center lg:justify-start gap-4 pt-6 text-teal-300">
         <a
           href="https://www.linkedin.com/in/shakeelahmadfc"
           target="_blank"
@@ -48,8 +50,6 @@
           href="mailto:sahmadpk94@gmail.com"
           class="hover:text-teal-300 transition"
           aria-label="Email"
-          rel="noopener noreferrer"
-          target="_blank"
         >
           <Icon icon="mdi:email" class="w-6 h-6" />
         </a>
@@ -62,11 +62,11 @@
         </a>
       </div>
     </aside>
-    <main class="w-full lg:w-[60%] font-sans scroll-smooth overflow-y-auto pt-0 px-6 lg:pt-24 lg:px-12">
+    <main class="w-full lg:w-[60%] px-6 lg:px-24 pt-12 lg:pt-24">
       <!-- About Section -->
       <Motion let:motion>
         <Saos animation={"fade-in 4s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
-          <section id="about" use:motion class="py-16">
+          <section id="about" use:motion class="pb-16">
             <h2 class="text-4xl font-bold text-white pb-6">About</h2>
             <p class="w-full text-md text-gray-400 leading-relaxed text-justify">
               I'm a full-stack developer with over 9 years of experience specializing in scalable web and mobile applications.
@@ -84,7 +84,7 @@
         <Saos animation={"fade-in 4s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
           <section id="education" use:motion class="relative py-16 text-white overflow-hidden">
             <div class="z-10 max-w-3xl mx-auto">
-              <h2 class="text-3xl font-semibold mb-6 text-center">Background & Certifications</h2>
+              <h2 class="text-4xl font-bold text-white pb-6">Background</h2>
               <ul class="list-disc pl-6 space-y-4 text-gray-300">
                 <li><span class="font-light">AWS Certified Cloud Practitioner</span> (2024)</li>
                 <li><span class="font-light">Big Data Solution Architecture</span> – Conestoga College, Waterloo, ON (2021)</li>
@@ -99,7 +99,7 @@
         <Saos animation={"fade-in 4s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
           <section id="experience" use:motion class="relative py-16 text-white overflow-hidden">
             <div class="z-10 max-w-3xl mx-auto">
-              <h2 class="text-3xl font-semibold mb-6 text-center">Professional Experience & Skills</h2>
+              <h2 class="text-4xl font-bold text-white pb-6">Experience & Skills</h2>
               
               <!-- Experience List -->
               <ul class="space-y-4 text-gray-300 list-disc pl-6 mb-8">
@@ -138,7 +138,7 @@
         <Saos animation={"fade-in 4s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
           <section id="employment" use:motion class="relative py-16 text-white overflow-hidden">
             <div class="z-10 max-w-3xl mx-auto">
-              <h1 class="text-3xl font-semibold mb-8 text-center">Employment</h1>
+              <h1 class="text-4xl font-bold text-white pb-6">Employment</h1>
 
               <ol class="group/list space-y-12">
                 <!-- FieldFlex -->

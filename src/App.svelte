@@ -5,7 +5,7 @@
   import Saos from 'saos';
 </script>
 
-<div class="portfolio-app bg-gradient-to-b from-gray-900 to-black text-white min-h-screen">
+<div class="portfolio-app bg-gray-900 text-white min-h-screen">
   <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row w-full">
     <aside class="w-full lg:w-[40%] px-6 pt-12 pb-12 flex flex-col justify-between
               lg:sticky lg:top-0 lg:h-screen lg:pt-24 lg:pb-24">

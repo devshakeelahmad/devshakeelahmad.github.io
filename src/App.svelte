@@ -642,7 +642,7 @@
                       height="48"
                       decoding="async"
                       class="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                      src="/ffx.png"
+                      src="/ffx.jpg"
                     />
                   </a>
                 </li>
